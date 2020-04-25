@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!--Import bootstrap.css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <!-- navbar --init-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <a class="navbar-brand" href="#"><i class="material-icons">home</i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Psicología</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="enfermedades.html">Enfermedades</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- navbar --final-->
+
+      <div class="container">
+
+        <!-- slider --init-->
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/imagen2.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Elabora un horario… y cúmplelo</h5>
+                <p>Una forma de combatir esta actitud pasiva es realizar y comprometerse a cumplir un horario.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/imagen3.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Proponte objetivos</h5>
+                <p>Muy vinculado al consejo anterior. Se trata de imaginar un futuro o situación a la que quieres 
+                    llegar y que creas que puedas realizar.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/imagen4.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Haz deporte</h5>
+                <p>Se ha demostrado que realizar deporte de manera regular genera endorfinas endógenas, haciéndonos 
+                    sentir de mejor humor y disminuyendo los efectos de la depresión.</p>
+                </div>
+            </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- slider --final-->
+
+        <!-- scrollspy --init-->
+        <h1 class="display-3 mt-4 mb-4 text-center">Conceptos Basicos</h1>
+        <div class="row">
+            <div class="col-3">
+              <div class="nav flex-column nav-pills" 
+              id="v-pills-tab" 
+              role="tablist" 
+              aria-orientation="vertical">
+                <a class="nav-link active" 
+                id="v-pills-home-tab" 
+                data-toggle="pill" href="#v-pills-home" 
+                role="tab" aria-controls="v-pills-home" 
+                aria-selected="true">¿Que es psicología?</a>
+                <a class="nav-link" 
+                id="v-pills-profile-tab" 
+                data-toggle="pill" 
+                href="#v-pills-profile" 
+                role="tab" 
+                aria-controls="v-pills-profile" 
+                aria-selected="false">Su origen</a>
+                <a class="nav-link" 
+                id="v-pills-messages-tab" 
+                data-toggle="pill" 
+                href="#v-pills-messages" 
+                role="tab" 
+                aria-controls="v-pills-messages" 
+                aria-selected="false">¿Para que sirve?</a>
+              </div>
+            </div>
+            <div class="col-9 text-center">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" 
+                id="v-pills-home" role="tabpanel" 
+                aria-labelledby="v-pills-home-tab">
+                Para saber qué es la psicología, clarificaremos su definición principal: la psicología es la 
+                disciplina que estudia la conducta, los procesos cognitivos y afectivos de los individuos en 
+                relación con el medio ambiente. Etimológicamente el término psicología deriva del griego psique 
+                que significa alma y logos estudio.<br><br>
+
+                Una vez aclarado qué es la psicología queremos resaltar que este estudio del alma sienta sus 
+                bases en la filosofía, para luego redirigir sus objetivos y métodos de investigación al ámbito 
+                científico. Y es en la intersección de las ciencias humanas, biológicas y sociales dónde se 
+                desarrolla lo que hoy conocemos como psicología contemporánea.<br><br>
+
+                Los ámbitos de actuación de esta disciplina se han extendido creando áreas reconocidas hoy 
+                con los nombres de psicología de la personalidad, cognitiva, del comportamiento, organizacional 
+                y de la educación. También engloba a la psicología experimental, psicología social, psicología 
+                del deporte, psicología del arte y psicología forense-judicial.
+                </div>
+                <div class="tab-pane fade" 
+                id="v-pills-profile" 
+                role="tabpanel" 
+                aria-labelledby="v-pills-profile-tab">
+                La psicología es una ciencia relativamente nueva, desprendida de la filosofía a partir del siglo XVIII, a raíz 
+                de las doctrinas filosóficas del empirismo, que empezó a comprender la conducta humana como una serie de 
+                estímulos y respuestas determinadas por nuestra biología.<br><br> 
+                Así nace la psicofisiología, precursora del campo psicológico. Con el ingreso de las ciencias formales al panorama 
+                del saber, se da inicio a la posibilidad de una psicología ya no meramente teórica, sino incluso experimental.<br><br> 
+                El primer laboratorio de psicología experimental se fundó en la Universidad de Leipzig, Alemania, en 1879. A 
+                partir de entonces surgirían diversas ramas de exploración teórica y práctica de la mente humana, inaugurando 
+                un área del saber muy vasta y diversa como lo es hoy.
+                </div>
+                <div class="tab-pane fade" 
+                id="v-pills-messages" 
+                role="tabpanel" 
+                aria-labelledby="v-pills-messages-tab">
+                A grandes rasgos, podríamos decir que la psicología pretende a ayudar a las personas a manejar su vida de 
+                manera eficaz. Sin embargo, en nuestra sociedad sigue existiendo un marcado tabú a la hora de visitar a los 
+                psicólogos, pues desgraciadamente se sigue considerando que aquellos que recurren a la psicología es porque
+                presentan problemas mentales.
+
+                Los objetivos generales de la psicología pueden resumirse en la comprensión de los procesos propios de la mente 
+                del ser humano. En ello tienen cabida numerosos enfoques y metodologías, cada uno con sus objetivos específicos, 
+                con sus abordajes puntuales de lo que son la conciencia, el pensamiento y el aprendizaje.
+
+                Dicha comprensión de la mente humana persigue la posibilidad de, por un lado, ayudar a solventar las patologías 
+                emocionales y mentales que aquejan al hombre contemporáneo, perfeccionar las herramientas que aprendizaje de las 
+                que dispone y brindar claves respecto a la naturaleza de la conciencia y de eso que nos distingue de los animales.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- scrollspy --final-->
+
+          <!-- card #1 --init-->
+          <hr>
+          <h1 class="display-3 mt-4 mb-4 text-center">Definiciones según algunas organizaciones</h1>
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mb-4">
+              <div class="card box-shadow-efec">
+                <img src="./img/imagen7.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Qué es la psicología según la APA</h5>
+                  <p class="card-text text-justify">
+                    La psicología se trata del estudio de la mente y el comportamiento. Es una disciplina científica diversa 
+                    que comprende varias ramas principales de investigación, así como varias subáreas de investigación y 
+                    psicología aplicada. La investigación implica observación, experimentación, pruebas y análisis para 
+                    explorar los procesos o estímulos biológicos, cognitivos, emocionales, personales y sociales que subyacen 
+                    al comportamiento humano o animal.
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card box-shadow-efec">
+                <img src="./img/imagen6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Qué es la psicología según la OMS</h5>
+                  <p class="card-text text-justify">La OMS no proporciona una definición exacta de psicología, sino que define la salud mental. 
+                      Para ello la define como un estado de bienestar mental y psicológico. Determina que su objetivo es mejorar 
+                      la salud mental de las personas y de la sociedad en conjunto, fomentando el bienestar mental, previniendo 
+                      trastornos mentales y protegiendo los derechos humanos
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card #1 --init-->
+          <hr>
+          <!-- card #2 --init-->
+          <h1 class="display-3 mt-4 mb-4 text-justify">Definiciones según algunos autores</h1>
+          <div class="card-columns">
+            <div class="card box-shadow-efec">
+              <img src="./img/imagen8.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Qué es la psicología según Freud</h5>
+                <p class="card-text text-justify">
+                    Freud superó la creencia vinculada a la concepción del trastorno de conducta como expresión de una enfermedad 
+                    del cerebro. Es decir, vinculó las interacciones primarias de un niño con el posterior desarrollo de problemas 
+                    de conductas. Centró la base de la psicología en el psicoanálisis, el cual se centraba en la represión de los 
+                    instintos como único culpable del desarrollo de patologías futuras. Aquí puedes leer más sobre Sigmund Freud y 
+                    su teoría del psicoanálisis.
+                </p>
+              </div>
+            </div>
+            <div class="card box-shadow-efec">
+              <img src="./img/imagen9.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Qué es la psicología según Platón</h5>
+                <p class="card-text text-justify">
+                    Platón partía de la idea de que no existía la maldad y que por ello nadie podía ser malo 
+                    por naturaleza. Para él, una persona era malvada a consecuencia de malos hábitos o por una mala educación. 
+                    Fue el primero en dividir el alma en tres partes, una parte racional, otra pasional y por último una hedonista.
+                </p>
+              </div>
+            </div>
+            <div class="card box-shadow-efec">
+                <img src="./img/imagen10.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Qué es la psicología según Wundt</h5>
+                  <p class="card-text text-justify">
+                    El objetivo principal de Wundt era entender la consciencia tal y como se experimenta y, a su vez, entender 
+                    las leyes mentales que rigen a las personas.<br><br>
+                    El nombre con el cual este autor denominó lo que se considera la primera escuela psicológica fue Voluntarismo. 
+                    Para Wundt, la psicología experimental solo se podía utilizar para entender la conciencia inmediata, 
+                    por lo que, para entender los procesos mentales superiores y sus productos, se requería de la 
+                    observación naturalista.
+                  </p>
+                </div>
+            </div>
+            <div class="card box-shadow-efec">
+                <img src="./img/imagen11.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Qué es la psicología según James</h5>
+                  <p class="card-text text-justify">
+                    Según James, el enfoque científico y filosófico se debían utilizar en el estudio de la conducta y el 
+                    pensamiento del hombre. Afirmó que todos los aspectos del hombre se podrían conocer a través de la 
+                    investigación científica. Este autor consideraba que si una idea funcionaba, era válida. Es decir, 
+                    que el criterio último para juzgar una idea debía ser la utilidad de la misma.
+                  </p>
+                </div>
+            </div>
+            <div class="card box-shadow-efec">
+                <img src="./img/imagen12.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Qué es la psicología según Ebbinghaus</h5>
+                  <p class="card-text text-justify">
+                    El psicólogo Ebbinghaus hizo un gran aporte a la psicología, el cual marcó un antes y un después 
+                    en lo que a su punto de vista se refiere. Este autor estudió los procesos de aprendizaje y de 
+                    memoria en el mismo instante en que se producían y no en su posterioridad, que era tal y como 
+                    se habían estado estudiando hasta el momento. Fue uno de los primeros científicos en utilizar 
+                    el método experimental dentro de la psicología, ya que al contrario de lo que afirmaba Wundt, 
+                    este demostró que la memoria era un proceso psicológico superior capaz de ser medido de manera 
+                    experimental.
+                  </p>
+                </div>
+            </div>
+            <div class="card box-shadow-efec">
+                <img src="./img/imagen13.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Qué es la psicología según Titchener</h5>
+                  <p class="card-text text-justify">
+                    Para este autor, la psicología era fundamentalmente experimental, por lo que todo lo anterior 
+                    a dicha versión no tenía que considerarse psicología. Fue el fundador del estructuralismo.<br><br>
+                    Titchener pensaba igual que Wundt sobre que la psicología debía estudiar la experiencia inmediata, 
+                    es decir, la consciencia. Así que definió este concepto como la suma total de las experiencias 
+                    mentales y definió la mente como las experiencias acumuladas a lo largo de la vida. También 
+                    estableció como objetivos para la psicología la determinación de qué, el cómo y el porqué de 
+                    la vida mental. Define la psicología como el estudio analítico de la mente humana, adulta, 
+                    normal, generalizada, que se lleva a cabo mediante la introspección.
+                  </p>
+                </div>
+            </div>
+            <div class="card box-shadow-efec">
+                <img src="./img/imagen14.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Qué es la psicología según Watson</h5>
+                  <p class="card-text text-justify">
+                    Watson descubrió la psicología objetiva, donde negaba tanto el uso de la introspección como de 
+                    cualquier tipo de explicación de la conducta basada en el mentalismo. Determinó el objetivo de 
+                    la psicología como la predicción y el control de la conducta.
+                  </p>
+                </div>
+            </div>
+            <div class="card box-shadow-efec">
+                <img src="./img/imagen15.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Qué es la psicología según Piaget</h5>
+                  <p class="card-text text-justify">
+                    Piaget es considerado el padre de la psicología evolutiva, la cual se basa en el estudio del 
+                    desarrollo psíquico de las personas desde su nacimiento hasta la vejez. Para él, la psicología 
+                    se basa en la evolución de nuestro conocimiento sobre el entrono y en el desarrollo del pensamiento. 
+                    En el siguiente artículo encontrarás La teoría del aprendizaje de Piaget.
+                  </p>
+                </div>
+            </div>
+            <div class="card box-shadow-efec">
+                <img src="./img/imagen16.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Qué es la psicología según Skiner</h5>
+                  <p class="card-text text-justify">
+                    Este autor es uno de los más conocidos dentro de la corriente psicología del conductismo, la cual 
+                    supone que todos los comportamientos vienen como respuestas a determinados estímulos en el ambiente 
+                    o a partir de experiencias previas en la historia del individuo que lo lleva a cabo. Aquí puedes leer 
+                    la teoría de Burrhus Frederic Skinner.
+                  </p>
+                </div>
+            </div>
+          </div>
+          <!-- card #2 --init-->
+
+      </div>
+
+      <!-- footer --init-->
+	<footer class="py-5 bg-dark" style="color: white;">
+		<div class="container py-xl-4">
+			<div class="row footer-top">
+				<div class="col-lg-4 footer-grid_section_1its footer-text">
+					<!-- logo --init-->
+					<h2>
+						<a class="logo text-wh" href="index.html">
+							<img src="img/logo.png" alt="" class="img-fluid" width="50px" height="50px"><span>Psicología</span> Info
+						</a>
+					</h2>
+					<!-- logo --final-->
+					<p style="text-align: left;">
+                        Somos un portal de información especializado 
+                        en temas sobre psicología, abarcango su origen, 
+                        algunas enfermedades y Definiciones sobre esta 
+                        de algunos autores relevantes.
+                    </p>
+					<!-- social icons -->
+					<div>
+                        Siguenos...
+                        <img src="./img/icon1.jpg" class="icon-redes" alt="" width="30px" height="30px" style="border-radius: 5px; opacity: 0.8; cursor: pointer;">
+                        <img src="./img/icon2.jpg" class="icon-redes" alt="" width="30px" height="30px" style="border-radius: 5px; opacity: 0.8; cursor: pointer;">
+                        <img src="./img/icon3.jpg" class="icon-redes" alt="" width="30px" height="30px" style="border-radius: 5px; opacity: 0.8; cursor: pointer;">
+                    </div>
+					<!-- //social icons -->
+				</div>
+				<div class="col-lg-4 footer-grid_section_1its my-lg-0 my-sm-4 my-4">
+					<div class="footer-title">
+						<h3>Contacto</h3>
+					</div>
+					<div class="footer-text mt-4">
+						<p>Dirección : Cra 6A N° 15B-18 B/rio Villagranda Caucasia-Antioquia</p>
+						<p class="my-2">Celular : +57 3216050289</p>
+						<p>Email : <a href="">ana.navarro@gmail.com</a></p>
+					</div>
+				</div>
+				<div class="col-lg-4 footer-grid_section_1its">
+					<div class="footer-title">
+						<h3>Para mas información</h3>
+					</div>
+					<div class="info-form-right mt-4 p-0">
+						<form action="#" method="post">
+							<div class="row">
+								<div class="col-lg-6 form-group mb-2 pr-lg-1">
+									<input type="text" class="form-control" name="Name" placeholder="Nombre" required="">
+								</div>
+								<div class="col-lg-6 form-group mb-2 pl-lg-1">
+									<input type="text" class="form-control" name="Phone" placeholder="Telefono"
+										required="">
+								</div>
+							</div>
+							<div class="form-group mb-2">
+								<input type="email" class="form-control" name="Email" placeholder="Email" required="">
+							</div>
+							<div class="form-group mb-2">
+								<textarea name="Comment" class="form-control" placeholder="Comentario"
+									required=""></textarea>
+							</div>
+							<button type="submit" class="btn btn-light">Enviar</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer --final-->
+	<!-- copyright --init-->
+	<div class="cpy-right text-center py-3 bg-dark" style="color: white;">
+        <hr>
+		<p>© 2020 Psicología Info. All rights reserved | Design by ANA VANESSA NAVARRO SIBAJA</p>
+	</div>
+    <!-- copyright --final-->
+    <a href="#navbar"><div class="nav-flotante"><span class="material-icons">navigation</span></i></div></a>
+
+<!-- <script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!--JavaScript at end of body for optimized loading-->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+<script src="./js/index.js"></script>
+</body>
+</html>
